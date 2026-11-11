@@ -1,3 +1,6 @@
 .DS_Store
 *.log
 /node_modules/
+
+# TEMP: MyFitness profile photo, local build only. Never commit or deploy (no usage rights).
+/assets/img/temp-kaisa-myfitness.jpg

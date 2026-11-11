@@ -65,6 +65,8 @@
         "name": "Kaisa Rahu",
         "jobTitle": "Personaaltreener",
         "url": "https://kaisarahu.ee/",
+        "email": "kaisa.rahu@myfitness.ee",
+        "telephone": "[phone removed]",
         "sameAs": ["https://www.instagram.com/kaisarahu"],
         "workLocation": [
           { "@id": "https://kaisarahu.ee/#place-kristiine" },
@@ -176,11 +178,9 @@
              <img src="assets/img/kaisa-hero.webp" srcset="assets/img/kaisa-hero-480.webp 480w, assets/img/kaisa-hero-880.webp 880w"
                   sizes="(min-width: 900px) 440px, 100vw" width="880" height="1100" fetchpriority="high"
                   alt="Kaisa Rahu jõusaalis"> -->
-        <div class="photo-frame">
-          <div class="photo-placeholder" role="img" aria-label="Kaisa Rahu foto tuleb siia">
-            <span class="mono" aria-hidden="true">KR</span>
-            <small>Foto tulekul</small>
-          </div>
+        <!-- TEMP: MyFitness profile photo for the local build only (git-ignored, no usage rights). Replace with Kaisa's own photo (TODO #6) before deploying. -->
+        <div class="photo-frame is-cutout">
+          <img src="assets/img/temp-kaisa-myfitness.jpg" width="902" height="1100" alt="Kaisa Rahu" fetchpriority="high">
         </div>
       </div>
     </section>
@@ -320,7 +320,7 @@
         </div>
 
         <div class="note">
-          <p><strong>Ükski aeg ei sobi?</strong> Kirjuta: <a href="mailto:tere@kaisarahu.ee">tere@kaisarahu.ee</a></p>
+          <p><strong>Ükski aeg ei sobi?</strong> Kirjuta: <a href="mailto:kaisa.rahu@myfitness.ee">kaisa.rahu@myfitness.ee</a></p>
           <!-- TODO: check whether the Cal.com booking page shows in Estonian. Remove this line if it does. -->
           <p>Broneerimisleht võib olla inglise keeles.</p>
         </div>
@@ -355,11 +355,9 @@
     <section id="minust" class="section" aria-labelledby="minust-title">
       <div class="wrap about-grid">
         <!-- TODO #6: Kaisa's own portrait (webp, width/height set, loading="lazy" is fine here). -->
-        <div class="photo-frame">
-          <div class="photo-placeholder" role="img" aria-label="Kaisa Rahu portree tuleb siia">
-            <span class="mono" aria-hidden="true">KR</span>
-            <small>Foto tulekul</small>
-          </div>
+        <!-- TEMP: MyFitness profile photo for the local build only (git-ignored, no usage rights). Replace with Kaisa's own photo (TODO #6) before deploying. -->
+        <div class="photo-frame is-cutout">
+          <img src="assets/img/temp-kaisa-myfitness.jpg" width="902" height="1100" alt="Kaisa Rahu" loading="lazy">
         </div>
         <div>
           <p class="eyebrow">Minust</p>
@@ -372,6 +370,7 @@
           <ul class="about-list">
             <li><span class="ph">Kvalifikatsioon / sertifikaat (Kaisa lisab)</span></li>
           </ul>
+          <p class="section-cta"><a class="btn btn-primary" href="#asukohad">Broneeri trenn</a></p>
         </div>
       </div>
     </section>
@@ -413,6 +412,7 @@
             </div>
           </details>
         </div>
+        <p class="section-cta"><a class="btn btn-primary" href="#asukohad">Broneeri trenn</a></p>
       </div>
     </section>
 
@@ -422,12 +422,11 @@
         <div class="section-head">
           <p class="eyebrow">Kontakt</p>
           <h2 id="kontakt-title">Küsi julgelt</h2>
-          <p class="lead">Kirjuta e-postiga või Instagramis.</p>
+          <p class="lead">Helista, kirjuta e-postiga või Instagramis.</p>
         </div>
-        <!-- TODO #4: confirm contact email (MyFitness work address or personal). -->
-        <!-- TODO #5: phone number on the site – yes/no. -->
         <ul class="contact-links">
-          <li><a class="btn btn-light" href="mailto:tere@kaisarahu.ee">tere@kaisarahu.ee</a></li>
+          <li><a class="btn btn-light" href="mailto:kaisa.rahu@myfitness.ee">kaisa.rahu@myfitness.ee</a></li>
+          <li><a class="btn btn-outline-light" href="tel:[phone removed]">[phone removed]</a></li>
           <li><a class="btn btn-outline-light btn-ext" href="https://www.instagram.com/kaisarahu" target="_blank" rel="noopener">Instagram<span class="visually-hidden"> (avaneb uuel vahelehel)</span></a></li>
         </ul>
       </div>
@@ -441,7 +440,8 @@
         <p class="footer-small">See on Kaisa Rahu isiklik leht, mitte MyFitnessi ametlik veebileht.</p>
       </div>
       <ul class="footer-links">
-        <li><a href="mailto:tere@kaisarahu.ee">tere@kaisarahu.ee</a></li>
+        <li><a href="mailto:kaisa.rahu@myfitness.ee">kaisa.rahu@myfitness.ee</a></li>
+        <li><a href="tel:[phone removed]">[phone removed]</a></li>
         <li><a href="/privaatsus/">Privaatsus</a></li>
         <li><a href="/en/" lang="en" hreflang="en">In English</a></li>
       </ul>

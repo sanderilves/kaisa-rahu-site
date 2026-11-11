@@ -23,6 +23,7 @@ Two jobs: introduce Kaisa, and send visitors to **Cal.com** (`cal.eu`) to book a
 - Gyms: MyFitness Kristiine, MyFitness Rocca al Mare (Tallinn)
 - Languages: Estonian, English (*to confirm*)
 - Instagram: https://www.instagram.com/kaisarahu
+- Email: kaisa.rahu@myfitness.ee (confirmed, used on all pages incl. privacy) · Phone: [phone removed] (`tel:[phone removed]`, confirmed for publishing)
 - Specialties: Jõutreening / Strength training · Lapseootel ja sünnitusjärgne treening / Prenatal and postnatal training · Personaaltreening noortele / Personal training for young people · Rühi ja liikuvuse parandamine / Posture and mobility · Treeningud alustajale / Training for beginners
 
 ## Files
@@ -62,10 +63,12 @@ Global find-and-replace placeholders (values not confirmed yet):
 | `https://kaisarahu.ee` | Site domain (TODO #11). Replace everywhere incl. canonical, hreflang, og, JSON-LD, sitemap, robots |
 | `https://cal.eu/kaisarahu/kristiine-pt` | Cal.com Kristiine event (TODO #8) |
 | `https://cal.eu/kaisarahu/rocca-pt` | Cal.com Rocca al Mare event (TODO #8) |
-| `tere@kaisarahu.ee` | Contact email (TODO #4) |
+
+## Temporary build-only photo
+`/assets/img/temp-kaisa-myfitness.jpg` is Kaisa's MyFitness profile photo, used **only while building locally** (hero + About, `.photo-frame.is-cutout`). No usage rights, shows the MyFitness logo, and is git-ignored. **Before any deploy:** replace it with Kaisa's own photo (TODO #6), drop the `is-cutout` class if the new photo isn't shot on white, and remove the `.gitignore` line.
 
 ## Open items (handover §4)
-1 Bio/approach · 2 Qualifications (make **no** claims; don't claim the nutrition cert) · 3 Brand/logo (text logo for now) · 4 Email · 5 Phone yes/no · 6 Own photos with rights (never MyFitness photos) · 7 Session length + windows per gym · 8 Cal.com username + slugs · 9 Gym entry wording for non-members · 10 Cancellation rule · 11 Domain + hosting · 12 Verify gym addresses (Endla 45; Paldiski mnt 102) · H1 variant (using location-led one for now).
+1 Bio/approach · 2 Qualifications (make **no** claims; don't claim the nutrition cert) · 3 Brand/logo (text logo for now) · ~~4 Email~~ · ~~5 Phone~~ (done) · 6 Own photos with rights (never MyFitness photos) · 7 Session length + windows per gym · 8 Cal.com username + slugs · 9 Gym entry wording for non-members · 10 Cancellation rule · 11 Domain + hosting · 12 Verify gym addresses (Endla 45; Paldiski mnt 102) · H1 variant (using location-led one for now).
 
 ## Cal.com setup (done by Kaisa in Cal.com, reference only)
 | Setting | Value |

@@ -65,6 +65,8 @@
         "name": "Kaisa Rahu",
         "jobTitle": "Personal trainer",
         "url": "https://kaisarahu.ee/en/",
+        "email": "kaisa.rahu@myfitness.ee",
+        "telephone": "[phone removed]",
         "sameAs": ["https://www.instagram.com/kaisarahu"],
         "workLocation": [
           { "@id": "https://kaisarahu.ee/#place-kristiine" },
@@ -176,11 +178,9 @@
              <img src="../assets/img/kaisa-hero.webp" srcset="../assets/img/kaisa-hero-480.webp 480w, ../assets/img/kaisa-hero-880.webp 880w"
                   sizes="(min-width: 900px) 440px, 100vw" width="880" height="1100" fetchpriority="high"
                   alt="Kaisa Rahu in the gym"> -->
-        <div class="photo-frame">
-          <div class="photo-placeholder" role="img" aria-label="Photo of Kaisa Rahu coming soon">
-            <span class="mono" aria-hidden="true">KR</span>
-            <small>Photo coming soon</small>
-          </div>
+        <!-- TEMP: MyFitness profile photo for the local build only (git-ignored, no usage rights). Replace with Kaisa's own photo (TODO #6) before deploying. -->
+        <div class="photo-frame is-cutout">
+          <img src="../assets/img/temp-kaisa-myfitness.jpg" width="902" height="1100" alt="Kaisa Rahu" fetchpriority="high">
         </div>
       </div>
     </section>
@@ -320,7 +320,7 @@
         </div>
 
         <div class="note">
-          <p><strong>None of the times work?</strong> Email <a href="mailto:tere@kaisarahu.ee">tere@kaisarahu.ee</a></p>
+          <p><strong>None of the times work?</strong> Email <a href="mailto:kaisa.rahu@myfitness.ee">kaisa.rahu@myfitness.ee</a></p>
         </div>
       </div>
     </section>
@@ -353,11 +353,9 @@
     <section id="about" class="section" aria-labelledby="about-title">
       <div class="wrap about-grid">
         <!-- TODO #6: Kaisa's own portrait (webp, width/height set, loading="lazy" is fine here). -->
-        <div class="photo-frame">
-          <div class="photo-placeholder" role="img" aria-label="Portrait of Kaisa Rahu coming soon">
-            <span class="mono" aria-hidden="true">KR</span>
-            <small>Photo coming soon</small>
-          </div>
+        <!-- TEMP: MyFitness profile photo for the local build only (git-ignored, no usage rights). Replace with Kaisa's own photo (TODO #6) before deploying. -->
+        <div class="photo-frame is-cutout">
+          <img src="../assets/img/temp-kaisa-myfitness.jpg" width="902" height="1100" alt="Kaisa Rahu" loading="lazy">
         </div>
         <div>
           <p class="eyebrow">About me</p>
@@ -370,6 +368,7 @@
           <ul class="about-list">
             <li><span class="ph">Qualification / certificate (Kaisa to add)</span></li>
           </ul>
+          <p class="section-cta"><a class="btn btn-primary" href="#locations">Book a session</a></p>
         </div>
       </div>
     </section>
@@ -411,6 +410,7 @@
             </div>
           </details>
         </div>
+        <p class="section-cta"><a class="btn btn-primary" href="#locations">Book a session</a></p>
       </div>
     </section>
 
@@ -420,12 +420,11 @@
         <div class="section-head">
           <p class="eyebrow">Contact</p>
           <h2 id="contact-title">Just ask</h2>
-          <p class="lead">Message me by email or on Instagram.</p>
+          <p class="lead">Call, email or message me on Instagram.</p>
         </div>
-        <!-- TODO #4: confirm contact email (MyFitness work address or personal). -->
-        <!-- TODO #5: phone number on the site – yes/no. -->
         <ul class="contact-links">
-          <li><a class="btn btn-light" href="mailto:tere@kaisarahu.ee">tere@kaisarahu.ee</a></li>
+          <li><a class="btn btn-light" href="mailto:kaisa.rahu@myfitness.ee">kaisa.rahu@myfitness.ee</a></li>
+          <li><a class="btn btn-outline-light" href="tel:[phone removed]">[phone removed]</a></li>
           <li><a class="btn btn-outline-light btn-ext" href="https://www.instagram.com/kaisarahu" target="_blank" rel="noopener">Instagram<span class="visually-hidden"> (opens in a new tab)</span></a></li>
         </ul>
       </div>
@@ -439,7 +438,8 @@
         <p class="footer-small">This is Kaisa Rahu's personal website, not an official MyFitness website.</p>
       </div>
       <ul class="footer-links">
-        <li><a href="mailto:tere@kaisarahu.ee">tere@kaisarahu.ee</a></li>
+        <li><a href="mailto:kaisa.rahu@myfitness.ee">kaisa.rahu@myfitness.ee</a></li>
+        <li><a href="tel:[phone removed]">[phone removed]</a></li>
         <li><a href="/en/privacy/">Privacy</a></li>
         <li><a href="/" lang="et" hreflang="et">Eesti keeles</a></li>
       </ul>
