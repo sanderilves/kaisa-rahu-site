@@ -64,8 +64,8 @@ Global find-and-replace placeholders (values not confirmed yet):
 | `https://cal.eu/kaisarahu/kristiine-pt` | Cal.com Kristiine event (TODO #8) |
 | `https://cal.eu/kaisarahu/rocca-pt` | Cal.com Rocca al Mare event (TODO #8) |
 
-## Temporary build-only photo
-`/assets/img/temp-kaisa-myfitness.jpg` is Kaisa's MyFitness profile photo, used **only while building locally** (hero + About, `.photo-frame.is-cutout`). No usage rights, shows the MyFitness logo, and is git-ignored. **Before any deploy:** replace it with Kaisa's own photo (TODO #6), drop the `is-cutout` class if the new photo isn't shot on white, and remove the `.gitignore` line.
+## Temporary build-only photos
+`/assets/img/temp-kaisa-hero.jpg` (hero) and `temp-kaisa-about.jpg` (About) come from Kaisa's Instagram (the hero photo is credited to a photographer), copied from saved pages `assets/img/Instagram*.html`. `temp-kaisa-myfitness.jpg` (MyFitness profile photo) is no longer used. All of these are **git-ignored, rights not cleared, local build only**, and the photos show the MyFitness logo. **Before any deploy:** replace them with photos Kaisa has rights to (TODO #6), as webp with width/height, and delete the saved Instagram pages.
 
 ## Open items (handover §4)
 1 Bio/approach · 2 Qualifications (make **no** claims; don't claim the nutrition cert) · 3 Brand/logo (text logo for now) · ~~4 Email~~ · ~~5 Phone~~ (done) · 6 Own photos with rights (never MyFitness photos) · 7 Session length + windows per gym · 8 Cal.com username + slugs · 9 Gym entry wording for non-members · 10 Cancellation rule · 11 Domain + hosting · 12 Verify gym addresses (Endla 45; Paldiski mnt 102) · H1 variant (using location-led one for now).
