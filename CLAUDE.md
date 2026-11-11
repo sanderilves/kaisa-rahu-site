@@ -15,7 +15,8 @@ Two jobs: introduce Kaisa, and send visitors to **Cal.com** (`cal.eu`) to book a
 | Prices / payments | **None** anywhere |
 | Cookies / analytics / 3rd-party scripts | **None**. No cookie banner |
 | Stack | Plain HTML + CSS + tiny vanilla JS. No frameworks, npm or build step |
-| Fonts | Self-hosted woff2 in `/assets/fonts/` (Manrope body, Fraunces headings, OFL). **Never Google Fonts** |
+| Fonts | Self-hosted woff2 in `/assets/fonts/` (Bricolage Grotesque headings, Manrope body, OFL). **Never Google Fonts** |
+| Colours | Tokens in `:root`: `--bg` #FFF8F3, `--bg-alt` #FFF0E8, `--surface` #FFF, `--ink`/`--plum` #2A1F3D, `--muted` #5E5470, `--line` #EEE2D8, `--coral` #FF7A59, `--coral-hover` #F2603D, `--coral-ink` #B8452A, `--plum-dark` #1C1429, `--violet` #4B3B78, tints peach #FFE3D6 / lilac #ECE6FF / mint #D6F3E6 / butter #FFF1C7, `--focus` #5B3DF5. **Plum text on coral, never white.** Coral-coloured text on light backgrounds uses `--coral-ink` |
 
 ## Coach facts (only these; don't invent others)
 - Name: Kaisa Rahu – personaaltreener / personal trainer
