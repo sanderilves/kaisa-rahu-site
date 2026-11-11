@@ -38,7 +38,7 @@ Two jobs: introduce Kaisa, and send visitors to **Cal.com** (`cal.eu`) to book a
 /assets/img/              favicon.svg, og-image.png (1200×630), photos as webp with width/height
 /robots.txt, /sitemap.xml
 ```
-Internal links go to `/` and `/en/`, never `index.html`.
+Internal page links are **relative** to the page's folder (e.g. `en/`, `../`, `privaatsus/`, `../#asukohad`), never root-absolute (`/en/`) and never `index.html`, so the site works under a subpath (GitHub Pages: sanderilves.github.io/kaisa-rahu-site/), locally and on the final domain. Canonical/hreflang/og URLs stay absolute.
 Asset references (CSS, JS, fonts, images) are **relative** (`assets/…`, `../assets/…`, `../../assets/…`; fonts in CSS as `../fonts/…`) so pages also render when opened directly from disk.
 
 ## Page structure (identical ET and EN, same order, same IDs where possible)
