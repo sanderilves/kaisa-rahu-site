@@ -275,17 +275,17 @@
           <!-- CHECK: plan details (length, format, how it's delivered) to confirm with Kaisa -->
           <li class="card">
             <span class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18h18"/><path d="M3 18v-4l4-6h3l1.5 3.5 4.5 1.5c3 1 4.5 2.5 4.5 5"/><path d="M9.5 12l-1.5 1.5M12 13l-1.5 1.5"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="15" cy="4.5" r="1.8"/><path d="M13 8l-2 6M13 9l3 2 2-1M13 9l-3 1-2 2M11 14l3 3-1 4M11 14l-2 4-4 1"/></svg>
             </span>
             <h3>Running plans</h3>
-            <p>A running plan built around your goal and schedule – whether you're aiming for your first 5K or a half marathon. <a href="#prices">See price →</a></p>
+            <p>A running plan built around your goal and schedule. <a href="#prices">See price →</a></p>
           </li>
           <li class="card">
             <span class="card-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6c1.5-1.5 3-1.5 4.5 0s3 1.5 4.5 0"/><circle cx="6" cy="17" r="3"/><circle cx="18" cy="17" r="3"/><path d="M6 17l4-5h5l3 5M10 12l2 5M12 17l3-5"/></svg>
             </span>
             <h3>Triathlon plans</h3>
-            <p>A swim, bike and run plan that fits your week and gets you ready for race day. <a href="#prices">See price →</a></p>
+            <p>A swim, bike and run plan that fits your week. <a href="#prices">See price →</a></p>
           </li>
           <li class="card">
             <span class="card-icon" aria-hidden="true">
@@ -298,22 +298,26 @@
       </div>
     </section>
 
-    <!-- ===== Prices ===== -->
+    <!-- ===== Price list ===== -->
     <section id="prices" class="section" aria-labelledby="prices-title">
       <div class="wrap">
         <div class="section-head">
-          <h2 id="prices-title">Prices</h2>
+          <h2 id="prices-title">Price list</h2>
         </div>
 
         <div class="prices">
           <article class="price-card" aria-labelledby="prices-pt">
             <h3 id="prices-pt">Personal training at MyFitness</h3>
-            <!-- TODO: paste the MyFitness personal training price list (prices incl. VAT). -->
             <dl class="price-list">
-              <div><dt><span class="ph">MyFitness personal training price list (to be added)</span></dt><dd><span class="ph">… €</span></dd></div>
+              <div><dt>Personal training 1× / 3× / 7×</dt><dd><strong>€60 / €165 / €366</strong></dd></div>
+              <div><dt>Personal training with a friend 1× / 3× / 7×</dt><dd><strong>€72 / €216 / €479</strong></dd></div>
+              <div><dt>Small-group personal training 1× (max 4 people)</dt><dd><strong>€99</strong></dd></div>
+              <div><dt>Body composition analysis</dt><dd><strong>€20</strong></dd></div>
+              <div><dt>Training programme</dt><dd><strong>€60</strong></dd></div>
             </dl>
-            <!-- TODO: confirm validity date and whether gym entry is included -->
-            <p class="price-note">Prices valid from <span class="ph">[DATE]</span>. Gym entry (membership or single-visit ticket) is not included.</p>
+            <!-- TODO: confirm gym entry is not included; confirm "sõbraga" price is the total for both people; add "valid from" date -->
+            <!-- TODO: add "Toitumisnõustamine" (nutrition counselling) only if Kaisa holds a nutrition qualification -->
+            <p class="price-note">Prices include VAT. Gym entry (membership or single-visit ticket) is not included.</p>
             <div class="price-cta">
               <a class="btn btn-primary" href="#locations">Book a session</a>
             </div>
@@ -321,11 +325,12 @@
 
           <article class="price-card" aria-labelledby="prices-plans">
             <h3 id="prices-plans">Individual training plans</h3>
-            <!-- TODO: confirm Kaisa is VAT-registered; if not, prices are 75 € / 100 € with no VAT line. Confirm plan length/what's included. -->
             <dl class="price-list">
-              <div><dt>Individual running plan</dt><dd><strong>€93</strong> <small>incl. VAT</small></dd></div>
-              <div><dt>Individual triathlon plan</dt><dd><strong>€124</strong> <small>incl. VAT</small></dd></div>
+              <div><dt>Individual running plan</dt><dd><strong>€93</strong> <small>€75 + VAT</small></dd></div>
+              <div><dt>Individual triathlon plan</dt><dd><strong>€124</strong> <small>€100 + VAT</small></dd></div>
             </dl>
+            <!-- TODO: confirm plan length/what's included -->
+            <p class="price-note">Price includes 24% VAT.</p>
             <div class="price-cta">
               <a class="btn btn-primary" href="mailto:kaisa.rahu@myfitness.ee?subject=Training%20plan">Order by email</a>
             </div>
@@ -352,7 +357,6 @@
             <div class="gym-cta">
               <!-- TODO #8: Cal.com username + event slug -->
               <a class="btn btn-primary btn-ext" href="https://cal.eu/kaisarahu/kristiine-pt" target="_blank" rel="noopener">Pick a time<span class="visually-hidden"> – MyFitness Kristiine (opens in a new tab)</span></a>
-              <p class="newtab-hint" aria-hidden="true">Opens in a new tab</p>
             </div>
           </article>
 
@@ -365,7 +369,6 @@
             <div class="gym-cta">
               <!-- TODO #8: Cal.com username + event slug -->
               <a class="btn btn-primary btn-ext" href="https://cal.eu/kaisarahu/rocca-pt" target="_blank" rel="noopener">Pick a time<span class="visually-hidden"> – MyFitness Rocca al Mare (opens in a new tab)</span></a>
-              <p class="newtab-hint" aria-hidden="true">Opens in a new tab</p>
             </div>
           </article>
           <!-- Gym: Järve -->
@@ -377,7 +380,6 @@
             <div class="gym-cta">
               <!-- TODO #8: Cal.com username + event slug -->
               <a class="btn btn-primary btn-ext" href="https://cal.eu/kaisarahu/jarve-pt" target="_blank" rel="noopener">Pick a time<span class="visually-hidden"> – MyFitness Järve (opens in a new tab)</span></a>
-              <p class="newtab-hint" aria-hidden="true">Opens in a new tab</p>
             </div>
           </article>
         </div>

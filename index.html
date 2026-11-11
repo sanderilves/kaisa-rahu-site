@@ -188,7 +188,7 @@
       <nav id="site-nav" class="site-nav" aria-label="Põhimenüü">
         <ul>
           <li><a href="#treeningud">Treeningud</a></li>
-          <li><a href="#hinnad">Hinnad</a></li>
+          <li><a href="#hinnakiri">Hinnakiri</a></li>
           <li><a href="#kuidas">Kuidas broneerida</a></li>
           <li><a href="#minust">Minust</a></li>
           <li><a href="#kkk">KKK</a></li>
@@ -275,17 +275,17 @@
           <!-- CHECK: plan details (length, format, how it's delivered) to confirm with Kaisa -->
           <li class="card">
             <span class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18h18"/><path d="M3 18v-4l4-6h3l1.5 3.5 4.5 1.5c3 1 4.5 2.5 4.5 5"/><path d="M9.5 12l-1.5 1.5M12 13l-1.5 1.5"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="15" cy="4.5" r="1.8"/><path d="M13 8l-2 6M13 9l3 2 2-1M13 9l-3 1-2 2M11 14l3 3-1 4M11 14l-2 4-4 1"/></svg>
             </span>
             <h3>Jooksukavad</h3>
-            <p>Sinu eesmärgi ja päevakavaga arvestav jooksuplaan – olgu sihiks esimene 5 km või poolmaraton. <a href="#hinnad">Vaata hinda →</a></p>
+            <p>Sinu eesmärgi ja päevakavaga arvestav jooksuplaan. <a href="#hinnakiri">Vaata hinda →</a></p>
           </li>
           <li class="card">
             <span class="card-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6c1.5-1.5 3-1.5 4.5 0s3 1.5 4.5 0"/><circle cx="6" cy="17" r="3"/><circle cx="18" cy="17" r="3"/><path d="M6 17l4-5h5l3 5M10 12l2 5M12 17l3-5"/></svg>
             </span>
             <h3>Triatlonikavad</h3>
-            <p>Ujumise, ratta ja jooksu kava, mis sobitub sinu nädalasse ja viib sind võistluseks valmis. <a href="#hinnad">Vaata hinda →</a></p>
+            <p>Ujumise, ratta ja jooksu kava, mis sobitub sinu nädalasse. <a href="#hinnakiri">Vaata hinda →</a></p>
           </li>
           <li class="card">
             <span class="card-icon" aria-hidden="true">
@@ -298,36 +298,41 @@
       </div>
     </section>
 
-    <!-- ===== Prices ===== -->
-    <section id="hinnad" class="section" aria-labelledby="hinnad-title">
+    <!-- ===== Price list ===== -->
+    <section id="hinnakiri" class="section" aria-labelledby="hinnakiri-title">
       <div class="wrap">
         <div class="section-head">
-          <h2 id="hinnad-title">Hinnad</h2>
+          <h2 id="hinnakiri-title">Hinnakiri</h2>
         </div>
 
         <div class="prices">
-          <article class="price-card" aria-labelledby="hinnad-pt">
-            <h3 id="hinnad-pt">Personaaltreening MyFitnessis</h3>
-            <!-- TODO: paste the MyFitness personal training price list (prices incl. VAT). -->
+          <article class="price-card" aria-labelledby="hinnakiri-pt">
+            <h3 id="hinnakiri-pt">Personaaltreening MyFitnessis</h3>
             <dl class="price-list">
-              <div><dt><span class="ph">MyFitnessi personaaltreeningu hinnakiri (lisatakse)</span></dt><dd><span class="ph">… €</span></dd></div>
+              <div><dt>Personaaltreening 1× / 3× / 7×</dt><dd><strong>60 € / 165 € / 366 €</strong></dd></div>
+              <div><dt>Personaaltreening sõbraga 1× / 3× / 7×</dt><dd><strong>72 € / 216 € / 479 €</strong></dd></div>
+              <div><dt>Grupi personaaltreening 1× (max 4 inimest)</dt><dd><strong>99 €</strong></dd></div>
+              <div><dt>Kehaanalüüs</dt><dd><strong>20 €</strong></dd></div>
+              <div><dt>Treeningkava</dt><dd><strong>60 €</strong></dd></div>
             </dl>
-            <!-- TODO: confirm validity date and whether gym entry is included -->
-            <p class="price-note">Hinnad kehtivad alates <span class="ph">[KUUPÄEV]</span>. Saali sissepääs (liikmesus või ühekordne pilet) ei sisaldu hinnas.</p>
+            <!-- TODO: confirm gym entry is not included; confirm "sõbraga" price is the total for both people; add "valid from" date -->
+            <!-- TODO: add "Toitumisnõustamine" (nutrition counselling) only if Kaisa holds a nutrition qualification -->
+            <p class="price-note">Hinnad sisaldavad käibemaksu. Saali sissepääs (liikmesus või ühekordne pilet) ei sisaldu hinnas.</p>
             <div class="price-cta">
               <a class="btn btn-primary" href="#asukohad">Broneeri trenn</a>
             </div>
           </article>
 
-          <article class="price-card" aria-labelledby="hinnad-plans">
-            <h3 id="hinnad-plans">Individuaalsed treeningplaanid</h3>
-            <!-- TODO: confirm Kaisa is VAT-registered; if not, prices are 75 € / 100 € with no VAT line. Confirm plan length/what's included. -->
+          <article class="price-card" aria-labelledby="hinnakiri-plans">
+            <h3 id="hinnakiri-plans">Individuaalsed treeningkavad</h3>
             <dl class="price-list">
-              <div><dt>Individuaalne jooksukava</dt><dd><strong>93 €</strong> <small>sh käibemaks</small></dd></div>
-              <div><dt>Individuaalne triatlonikava</dt><dd><strong>124 €</strong> <small>sh käibemaks</small></dd></div>
+              <div><dt>Individuaalne jooksukava</dt><dd><strong>93 €</strong> <small>75 € + km</small></dd></div>
+              <div><dt>Individuaalne triatlonikava</dt><dd><strong>124 €</strong> <small>100 € + km</small></dd></div>
             </dl>
+            <!-- TODO: confirm plan length/what's included -->
+            <p class="price-note">Hind sisaldab käibemaksu 24%.</p>
             <div class="price-cta">
-              <a class="btn btn-primary" href="mailto:kaisa.rahu@myfitness.ee?subject=Treeningplaan">Telli e-postiga</a>
+              <a class="btn btn-primary" href="mailto:kaisa.rahu@myfitness.ee?subject=Treeningkava">Telli e-postiga</a>
             </div>
           </article>
         </div>
@@ -352,7 +357,6 @@
             <div class="gym-cta">
               <!-- TODO #8: Cal.com username + event slug -->
               <a class="btn btn-primary btn-ext" href="https://cal.eu/kaisarahu/kristiine-pt" target="_blank" rel="noopener">Vali aeg<span class="visually-hidden"> – MyFitness Kristiine (avaneb uuel vahelehel)</span></a>
-              <p class="newtab-hint" aria-hidden="true">Avaneb uuel vahelehel</p>
             </div>
           </article>
 
@@ -365,7 +369,6 @@
             <div class="gym-cta">
               <!-- TODO #8: Cal.com username + event slug -->
               <a class="btn btn-primary btn-ext" href="https://cal.eu/kaisarahu/rocca-pt" target="_blank" rel="noopener">Vali aeg<span class="visually-hidden"> – MyFitness Rocca al Mare (avaneb uuel vahelehel)</span></a>
-              <p class="newtab-hint" aria-hidden="true">Avaneb uuel vahelehel</p>
             </div>
           </article>
           <!-- Gym: Järve -->
@@ -377,7 +380,6 @@
             <div class="gym-cta">
               <!-- TODO #8: Cal.com username + event slug -->
               <a class="btn btn-primary btn-ext" href="https://cal.eu/kaisarahu/jarve-pt" target="_blank" rel="noopener">Vali aeg<span class="visually-hidden"> – MyFitness Järve (avaneb uuel vahelehel)</span></a>
-              <p class="newtab-hint" aria-hidden="true">Avaneb uuel vahelehel</p>
             </div>
           </article>
         </div>

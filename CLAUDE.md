@@ -12,7 +12,7 @@ Two jobs: introduce Kaisa, and send visitors to **Cal.com** (`cal.eu`) to book a
 | Booking | Cal.com EU (`https://cal.eu/<username>/<slug>`), one event per gym. Opens in a **new tab**, never embedded |
 | Languages | ET (`/`) + EN (`/en/`), plain-link ET/EN switch |
 | Contact | Booking + `mailto:` + Instagram. **No contact form** |
-| Prices | Shown, incl. VAT. No payments on the site. Not in JSON-LD until VAT status and the MyFitness price list are confirmed |
+| Prices | Shown (B2C, incl. VAT). No payments on the site. MyFitness prices incl. VAT; Kaisa's plans 75 € / 100 € + 24% VAT (93 € / 124 €). Not in JSON-LD yet |
 | Cookies / analytics / 3rd-party scripts | **None**. No cookie banner |
 | Stack | Plain HTML + CSS + tiny vanilla JS. No frameworks, npm or build step |
 | Fonts | Self-hosted woff2 in `/assets/fonts/` (Bricolage Grotesque headings, Manrope body, OFL). **Never Google Fonts** |
@@ -24,7 +24,7 @@ Two jobs: introduce Kaisa, and send visitors to **Cal.com** (`cal.eu`) to book a
 - Languages: Estonian, English (*to confirm*)
 - Instagram: https://www.instagram.com/kaisarahu
 - Email: kaisa.rahu@myfitness.ee (confirmed, used on all pages incl. privacy) · Phone: **not shown** on the site (removed at the owner's request; keep it off pages and JSON-LD)
-- Specialties: Jõutreening / Strength training · Lapseootel ja sünnitusjärgne treening / Prenatal and postnatal training · Personaaltreening noortele / Personal training for young people · Rühi ja liikuvuse parandamine / Posture and mobility · Treeningud alustajale / Training for beginners · Jooksukavad / Running plans · Triatlonikavad / Triathlon plans (remote plans, ordered by email, priced in `#hinnad` / `#prices`)
+- Specialties: Jõutreening / Strength training · Lapseootel ja sünnitusjärgne treening / Prenatal and postnatal training · Personaaltreening noortele / Personal training for young people · Rühi ja liikuvuse parandamine / Posture and mobility · Treeningud alustajale / Training for beginners · Jooksukavad / Running plans · Triatlonikavad / Triathlon plans (remote plans, ordered by email, priced in `#hinnakiri` / `#prices`)
 
 ## Files
 ```
@@ -42,9 +42,9 @@ Internal page links are **relative** to the page's folder (e.g. `en/`, `../`, `p
 Asset references (CSS, JS, fonts, images) are **relative** (`assets/…`, `../assets/…`, `../../assets/…`; fonts in CSS as `../fonts/…`) so pages also render when opened directly from disk.
 
 ## Page structure (identical ET and EN, same order, same IDs where possible)
-Header (text logo, anchor nav, ET/EN) → Hero (H1 + line + CTA to `#asukohad` / `#locations`) → Specialties (7 cards + "Pole kindel"/"Not sure" card = 8; 1 column on mobile, 2 at ≥640px, 4 at ≥1100px) → Prices (`#hinnad` / `#prices`: Block A personal training at MyFitness with "Broneeri trenn" button; Block B individual training plans with "Telli e-postiga" mailto; 2 cards side by side at ≥800px; nav link "Hinnad"/"Prices" after "Treeningud"/"Training") → Locations/booking (3 gym cards: Kristiine, Rocca al Mare, Järve; 1 column on mobile, 3 columns at ≥1000px with rows aligned via subgrid. Each card: gym name, address, map link, 'Vali aeg' button (Cal.com, new tab + hint). No times, length or entry info on the site: Cal.com shows those.) → How booking works (3 steps) → About (bio + qualifications) → FAQ → Contact → Footer.
+Header (text logo, anchor nav, ET/EN) → Hero (H1 + line + CTA to `#asukohad` / `#locations`) → Specialties (7 cards + "Pole kindel"/"Not sure" card = 8; 1 column on mobile, 2 at ≥640px, 4 at ≥1100px) → Price list (`#hinnakiri` "Hinnakiri" / `#prices` "Price list": Block A personal training at MyFitness, full list incl. VAT, "Broneeri trenn" button; Block B individual training plans 93 € / 124 € incl. 24% VAT, "Telli e-postiga" mailto; 2 cards side by side at ≥800px; nav link "Hinnakiri"/"Prices" after "Treeningud"/"Training"; no nutrition counselling unless Kaisa holds the qualification) → Locations/booking (3 gym cards: Kristiine, Rocca al Mare, Järve; 1 column on mobile, 3 columns at ≥1000px with rows aligned via subgrid. Each card: gym name, address, map link, 'Vali aeg' button (Cal.com, new tab; no visible new-tab hint, only the visually-hidden text + ↗ icon). No times, length or entry info on the site: Cal.com shows those.) → How booking works (3 steps) → About (bio + qualifications) → FAQ → Contact → Footer.
 
-Section IDs: ET `treeningud`, `hinnad`, `asukohad`, `kuidas`, `minust`, `kkk`, `kontakt` · EN `training`, `prices`, `locations`, `how`, `about`, `faq`, `contact`.
+Section IDs: ET `treeningud`, `hinnakiri`, `asukohad`, `kuidas`, `minust`, `kkk`, `kontakt` · EN `training`, `prices`, `locations`, `how`, `about`, `faq`, `contact`.
 
 ## Sync rule
 **Every change is made on both ET and EN pages** (and both privacy pages). Sections, order, CTAs and Cal.com links must match.
