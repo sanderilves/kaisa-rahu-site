@@ -7,3 +7,6 @@
 # Saved Instagram pages (source of the temp photos; contain logged-in page data)
 /assets/img/Instagram*.html
 /assets/img/Instagram*_files/
+/assets/img/hero_photo.html
+/assets/img/hero_photo_files/
+/assets/img/hero_photo.png
