@@ -208,6 +208,20 @@ ul, ol { margin: 0; padding: 0; }
 @media (min-width: 640px) { .cards { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 1000px) { .cards { grid-template-columns: repeat(3, 1fr); } }
 
+/* ---------- Prices ---------- */
+.prices { display: grid; gap: 16px; }
+.price-card { display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px 20px; box-shadow: var(--shadow); }
+.price-card h3 { font-size: 1.3rem; margin-bottom: .4em; }
+.price-list { margin: 0 0 16px; }
+.price-list div { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.price-list div:last-child { border-bottom: 0; }
+.price-list dd { margin: 0; text-align: right; white-space: nowrap; }
+.price-list dd strong { font-size: 1.1rem; }
+.price-list dd small { display: block; color: var(--muted); font-size: .8rem; }
+.price-note { font-size: .9rem; color: var(--muted); margin: 0 0 16px; }
+.price-cta { margin-top: auto; padding-top: 8px; }
+@media (min-width: 800px) { .prices { grid-template-columns: repeat(2, 1fr); gap: 20px; } .price-card { padding: 24px; } }
+
 /* ---------- Locations ---------- */
 .gyms { display: grid; gap: 16px; }
 .gym { display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px 20px; box-shadow: var(--shadow); }
