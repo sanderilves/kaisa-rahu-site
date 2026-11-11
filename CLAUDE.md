@@ -65,8 +65,8 @@ Global find-and-replace placeholders (values not confirmed yet):
 | `https://cal.eu/kaisarahu/rocca-pt` | Cal.com Rocca al Mare event (TODO #8) |
 | `https://cal.eu/kaisarahu/jarve-pt` | Cal.com Järve event (TODO #8) |
 
-## Temporary build-only photos
-`/assets/img/temp-kaisa-hero.jpg` (hero, cropped 4:5 from `hero_photo.png`) and `temp-kaisa-about.jpg` (About, the gym leg-raise photo credited to a photographer) come from Kaisa's Instagram, via saved pages `assets/img/Instagram*.html` / `hero_photo.html`. `temp-kaisa-myfitness.jpg` (MyFitness profile photo) is no longer used. All of these are **git-ignored, rights not cleared, local build only**, and the photos show the MyFitness logo. **Before any deploy:** replace them with photos Kaisa has rights to (TODO #6), as webp with width/height, and delete the saved Instagram pages.
+## Temporary photos (published on the test site)
+`/assets/img/kaisa-hero.webp` (hero, outdoor portrait) and `kaisa-about.webp` (About, gym leg raise, credited to a photographer) come from Kaisa's Instagram and are committed and live on GitHub Pages at the site owner's request. Rights are not formally cleared and the gym photo shows the MyFitness logo: **replace them with rights-cleared photos before launch (TODO #6).** The source files (`temp-*.jpg`, saved `Instagram*.html` / `hero_photo*`) stay git-ignored; `temp-kaisa-myfitness.jpg` (MyFitness profile photo) is unused and must not be published.
 
 ## Open items (handover §4)
 1 Bio adapted from Kaisa's text – awaiting approval · 2 Qualifications: supplied – confirm exact NASM certificate name (still never claim a nutrition cert) · 3 Brand/logo (text logo for now) · ~~4 Email~~ · ~~5 Phone~~ (done) · 6 Own photos with rights (never MyFitness photos) · 7 Session length + windows per gym · 8 Cal.com username + slugs · ~~9 Gym entry~~ (done: "Saali sisenemiseks on vaja liikmesust või ühekordset külastuspiletit." / "You'll need a membership or a single-visit ticket to enter the gym.") · ~~10 Cancellation rule~~ (done: 24 h) · 11 Domain + hosting · 12 Verify all three gym addresses (Endla 45; Paldiski mnt 102; Pärnu mnt 238) · H1 variant (using location-led one for now).
