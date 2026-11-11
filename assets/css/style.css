@@ -166,7 +166,6 @@ ul, ol { margin: 0; padding: 0; }
 .section { padding-block: 64px; }
 .section-alt { background: var(--bg-alt); }
 .section-head { max-width: 680px; margin-bottom: 32px; }
-.eyebrow { display: inline-block; font-weight: 700; font-size: .8rem; letter-spacing: .1em; text-transform: uppercase; color: var(--violet); margin-bottom: .6em; }
 .lead { font-size: 1.15rem; color: var(--muted); }
 .section-cta { margin: 32px 0 0; }
 
@@ -175,7 +174,6 @@ ul, ol { margin: 0; padding: 0; }
 /* ---------- Hero ---------- */
 .hero { padding-block: 32px 56px; }
 .hero-grid { display: grid; gap: 32px; align-items: center; }
-.hero-text .eyebrow { margin-bottom: .8em; }
 .hero h1 { margin-bottom: .4em; }
 .hero .lead { max-width: 34em; margin-bottom: 1.4em; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
@@ -269,7 +267,7 @@ ul, ol { margin: 0; padding: 0; }
 
 /* ---------- Contact ---------- */
 .contact { background: var(--plum); color: #fff; }
-.contact h2, .contact .eyebrow { color: #fff; }
+.contact h2 { color: #fff; }
 .contact .lead { color: rgb(255 255 255 / 85%); }
 .contact-links { list-style: none; display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
 .contact .btn-light { background: #fff; color: var(--plum); }
@@ -280,14 +278,10 @@ ul, ol { margin: 0; padding: 0; }
 .contact .ph { color: var(--ink); }
 
 /* ---------- Footer ---------- */
-.site-footer { background: var(--plum-dark); color: rgb(255 255 255 / 80%); padding-block: 40px; font-size: .95rem; }
+.site-footer { background: var(--plum-dark); color: rgb(255 255 255 / 80%); padding-block: 28px; font-size: .95rem; }
 .site-footer a { color: #fff; display: inline-flex; align-items: center; min-height: 44px; }
 .site-footer :focus-visible { outline-color: #fff; }
-.footer-grid { display: grid; gap: 16px; }
-.footer-name { font-family: var(--font-head); font-weight: 700; font-size: 1.15rem; color: #fff; margin: 0; }
-.footer-links { list-style: none; display: flex; flex-wrap: wrap; gap: 4px 24px; }
-.footer-small { color: rgb(255 255 255 / 70%); font-size: .85rem; margin: 0; }
-@media (min-width: 800px) { .footer-grid { grid-template-columns: 1fr auto; align-items: center; } }
+.footer-links { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 32px; }
 
 /* ---------- Legal (privacy) pages ---------- */
 .legal { padding-block: 48px 80px; }
