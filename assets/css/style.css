@@ -252,12 +252,12 @@ ul, ol { margin: 0; padding: 0; }
 .about-details { display: grid; gap: 28px; }
 .about-details h3 { margin-bottom: .5em; }
 .xp { list-style: none; display: grid; gap: 12px; }
-.xp strong { display: block; color: var(--violet); font-weight: 700; font-variant-numeric: tabular-nums; }
+.xp strong { display: block; color: var(--violet); font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
 @media (min-width: 640px) {
-  .xp li { display: grid; grid-template-columns: 6.5em 1fr; gap: 12px; }
+  .xp li { display: grid; grid-template-columns: 7.5em 1fr; gap: 12px; }
 }
 @media (min-width: 1000px) {
-  .about-details { grid-template-columns: 1fr 1.4fr; gap: 56px; }
+  .about-details { grid-template-columns: 1fr 1.9fr; gap: 56px; }
 }
 .about-details { margin: 0; }
 @media (min-width: 900px) {
