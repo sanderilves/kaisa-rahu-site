@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://kaisarahu.ee/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://kaisarahu.ee/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kaisarahu.ee/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kaisarahu.ee/"/>
+  </url>
+  <url>
+    <loc>https://kaisarahu.ee/en/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://kaisarahu.ee/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kaisarahu.ee/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kaisarahu.ee/"/>
+  </url>
+  <url>
+    <loc>https://kaisarahu.ee/privaatsus/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://kaisarahu.ee/privaatsus/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kaisarahu.ee/en/privacy/"/>
+  </url>
+  <url>
+    <loc>https://kaisarahu.ee/en/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://kaisarahu.ee/privaatsus/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kaisarahu.ee/en/privacy/"/>
+  </url>
+</urlset>
