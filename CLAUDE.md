@@ -42,7 +42,7 @@ Internal links go to `/` and `/en/`, never `index.html`.
 Asset references (CSS, JS, fonts, images) are **relative** (`assets/…`, `../assets/…`, `../../assets/…`; fonts in CSS as `../fonts/…`) so pages also render when opened directly from disk.
 
 ## Page structure (identical ET and EN, same order, same IDs where possible)
-Header (text logo, anchor nav, ET/EN) → Hero (H1 + line + CTA to `#asukohad` / `#locations`) → Specialties (5 cards) → Locations/booking (3 gym cards: Kristiine, Rocca al Mare, Järve; 1 column on mobile, 3 columns at ≥1000px; address, map link, windows, entry note, "Vali aeg"/"Pick a time" → Cal.com, new tab + hint) → How booking works (3 steps) → About (bio + qualifications) → FAQ → Contact → Footer.
+Header (text logo, anchor nav, ET/EN) → Hero (H1 + line + CTA to `#asukohad` / `#locations`) → Specialties (5 cards) → Locations/booking (3 gym cards: Kristiine, Rocca al Mare, Järve; 1 column on mobile, 3 columns at ≥1000px with rows aligned via subgrid. Each card: gym name, address, map link, 'Vali aeg' button (Cal.com, new tab + hint). No times, length or entry info on the site: Cal.com shows those.) → How booking works (3 steps) → About (bio + qualifications) → FAQ → Contact → Footer.
 
 Section IDs: ET `treeningud`, `asukohad`, `kuidas`, `minust`, `kkk`, `kontakt` · EN `training`, `locations`, `how`, `about`, `faq`, `contact`.
 
@@ -82,6 +82,7 @@ Global find-and-replace placeholders (values not confirmed yet):
 | Min notice / window | 12–24 h / 4 weeks |
 | Questions | Name, email, phone (optional), "Training goal". **No health/pregnancy/injury questions** (GDPR special category) |
 | Reminders | Email 24 h before |
+| Event descriptions | Each event description must state the session length and the gym entry rule (MyFitness membership or single-visit ticket). |
 | Busy | Only Outlook events marked Busy block slots. Share MyFitness work calendar free/busy into personal Outlook if separate |
 | Language | Check if booking page shows Estonian; if not, keep the note on the ET page |
 
