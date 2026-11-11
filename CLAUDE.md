@@ -69,7 +69,7 @@ Global find-and-replace placeholders (values not confirmed yet):
 `/assets/img/temp-kaisa-hero.jpg` (hero, cropped 4:5 from `hero_photo.png`) and `temp-kaisa-about.jpg` (About, the gym leg-raise photo credited to a photographer) come from Kaisa's Instagram, via saved pages `assets/img/Instagram*.html` / `hero_photo.html`. `temp-kaisa-myfitness.jpg` (MyFitness profile photo) is no longer used. All of these are **git-ignored, rights not cleared, local build only**, and the photos show the MyFitness logo. **Before any deploy:** replace them with photos Kaisa has rights to (TODO #6), as webp with width/height, and delete the saved Instagram pages.
 
 ## Open items (handover §4)
-1 Bio adapted from Kaisa's text – awaiting approval · 2 Qualifications: supplied – confirm exact NASM certificate name (still never claim a nutrition cert) · 3 Brand/logo (text logo for now) · ~~4 Email~~ · ~~5 Phone~~ (done) · 6 Own photos with rights (never MyFitness photos) · 7 Session length + windows per gym · 8 Cal.com username + slugs · 9 Gym entry wording for non-members · 10 Cancellation rule · 11 Domain + hosting · 12 Verify all three gym addresses (Endla 45; Paldiski mnt 102; Pärnu mnt 238) · H1 variant (using location-led one for now).
+1 Bio adapted from Kaisa's text – awaiting approval · 2 Qualifications: supplied – confirm exact NASM certificate name (still never claim a nutrition cert) · 3 Brand/logo (text logo for now) · ~~4 Email~~ · ~~5 Phone~~ (done) · 6 Own photos with rights (never MyFitness photos) · 7 Session length + windows per gym · 8 Cal.com username + slugs · ~~9 Gym entry~~ (done: "Saali sisenemiseks on vaja liikmesust või ühekordset külastuspiletit." / "You'll need a membership or a single-visit ticket to enter the gym.") · ~~10 Cancellation rule~~ (done: 24 h) · 11 Domain + hosting · 12 Verify all three gym addresses (Endla 45; Paldiski mnt 102; Pärnu mnt 238) · H1 variant (using location-led one for now).
 
 ## Cal.com setup (done by Kaisa in Cal.com, reference only)
 | Setting | Value |
@@ -82,6 +82,7 @@ Global find-and-replace placeholders (values not confirmed yet):
 | Min notice / window | 12–24 h / 4 weeks |
 | Questions | Name, email, phone (optional), "Training goal". **No health/pregnancy/injury questions** (GDPR special category) |
 | Reminders | Email 24 h before |
+| Cancellation | Cancellation/reschedule cut-off: 24 h (must match the FAQ). |
 | Event descriptions | Each event description must state the session length and the gym entry rule (MyFitness membership or single-visit ticket). |
 | Busy | Only Outlook events marked Busy block slots. Share MyFitness work calendar free/busy into personal Outlook if separate |
 | Language | Check if booking page shows Estonian. If Cal.com doesn't show Estonian, consider adding a FAQ line. |
