@@ -205,7 +205,8 @@ ul, ol { margin: 0; padding: 0; }
 
 @media (min-width: 900px) {
   .hero { padding-block: 56px 96px; }
-  .hero-grid { grid-template-columns: 1.15fr .85fr; gap: 56px; }
+  .hero-grid { grid-template-columns: 1.15fr .85fr; gap: 56px; align-items: start; }
+  .hero-text { padding-top: 40px; }
 }
 
 /* ---------- Specialties ---------- */
