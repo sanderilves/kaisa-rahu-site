@@ -36,8 +36,8 @@
 
 /* ---------- Tokens ---------- */
 :root {
-  --bg: #fff8f3;
-  --bg-alt: #fff0e8;
+  --bg: #ffffff;
+  --bg-alt: #ffffff;
   --surface: #ffffff;
   --ink: #2a1f3d;
   --muted: #5e5470;
@@ -116,7 +116,7 @@ ul, ol { margin: 0; padding: 0; }
 /* ---------- Header ---------- */
 .site-header {
   position: sticky; top: 0; z-index: 50;
-  background: rgb(255 248 243 / 94%);
+  background: rgb(255 255 255 / 94%);
   backdrop-filter: saturate(1.4) blur(8px);
   border-bottom: 1px solid var(--line);
 }
