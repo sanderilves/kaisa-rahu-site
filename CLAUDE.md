@@ -84,7 +84,7 @@ Global find-and-replace placeholders (values not confirmed yet):
 | Reminders | Email 24 h before |
 | Event descriptions | Each event description must state the session length and the gym entry rule (MyFitness membership or single-visit ticket). |
 | Busy | Only Outlook events marked Busy block slots. Share MyFitness work calendar free/busy into personal Outlook if separate |
-| Language | Check if booking page shows Estonian; if not, keep the note on the ET page |
+| Language | Check if booking page shows Estonian. If Cal.com doesn't show Estonian, consider adding a FAQ line. |
 
 ## Before every commit
 - [ ] ET and EN in sync (sections, order, CTAs, gym links)

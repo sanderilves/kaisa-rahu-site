@@ -218,8 +218,7 @@ ul, ol { margin: 0; padding: 0; }
 .gym-cta { margin-top: auto; padding-top: 16px; display: flex; flex-direction: column; gap: 8px; }
 .gym-cta .btn { width: 100%; }
 .newtab-hint { font-size: .875rem; color: var(--muted); text-align: center; margin: 0; }
-.note { margin-top: 24px; padding: 16px 20px; border-radius: var(--radius-sm); background: var(--surface); border-left: 4px solid var(--violet); color: var(--muted); }
-.note p:last-child { margin: 0; }
+.booking-fallback { margin: 24px 0 0; color: var(--muted); }
 @media (min-width: 1000px) {
   .gyms { grid-template-columns: repeat(3, 1fr); gap: 20px; }
   /* Subgrid lines up name, address, map link and button across the three cards */
