@@ -4,7 +4,7 @@ Separate project. **Nothing to do with Ilves Coaching (ilvescoaching.ee)**: don'
 
 ## What this is
 One-page bilingual site (ET primary, EN full copy) for **Kaisa Rahu**, personal trainer in Tallinn.
-Two jobs: introduce Kaisa, and send visitors to **Cal.com** (`cal.eu`) to book a personal training slot at one of two gyms.
+Two jobs: introduce Kaisa, and send visitors to **Cal.com** (`cal.eu`) to book a personal training slot at one of three gyms.
 
 ## Decisions (fixed)
 | Topic | Decision |
@@ -20,7 +20,7 @@ Two jobs: introduce Kaisa, and send visitors to **Cal.com** (`cal.eu`) to book a
 
 ## Coach facts (only these; don't invent others)
 - Name: Kaisa Rahu – personaaltreener / personal trainer
-- Gyms: MyFitness Kristiine, MyFitness Rocca al Mare (Tallinn)
+- Gyms: MyFitness Kristiine, MyFitness Rocca al Mare, MyFitness Järve (Tallinn)
 - Languages: Estonian, English (*to confirm*)
 - Instagram: https://www.instagram.com/kaisarahu
 - Email: kaisa.rahu@myfitness.ee (confirmed, used on all pages incl. privacy) · Phone: **not shown** on the site (removed at the owner's request; keep it off pages and JSON-LD)
@@ -42,7 +42,7 @@ Internal links go to `/` and `/en/`, never `index.html`.
 Asset references (CSS, JS, fonts, images) are **relative** (`assets/…`, `../assets/…`, `../../assets/…`; fonts in CSS as `../fonts/…`) so pages also render when opened directly from disk.
 
 ## Page structure (identical ET and EN, same order, same IDs where possible)
-Header (text logo, anchor nav, ET/EN) → Hero (H1 + line + CTA to `#asukohad` / `#locations`) → Specialties (5 cards) → Locations/booking (2 gym cards: address, map link, windows, entry note, "Vali aeg"/"Pick a time" → Cal.com, new tab + hint) → How booking works (3 steps) → About (bio + qualifications) → FAQ → Contact → Footer.
+Header (text logo, anchor nav, ET/EN) → Hero (H1 + line + CTA to `#asukohad` / `#locations`) → Specialties (5 cards) → Locations/booking (3 gym cards: Kristiine, Rocca al Mare, Järve; 1 column on mobile, 3 columns at ≥1000px; address, map link, windows, entry note, "Vali aeg"/"Pick a time" → Cal.com, new tab + hint) → How booking works (3 steps) → About (bio + qualifications) → FAQ → Contact → Footer.
 
 Section IDs: ET `treeningud`, `asukohad`, `kuidas`, `minust`, `kkk`, `kontakt` · EN `training`, `locations`, `how`, `about`, `faq`, `contact`.
 
@@ -63,21 +63,22 @@ Global find-and-replace placeholders (values not confirmed yet):
 | `https://kaisarahu.ee` | Site domain (TODO #11). Replace everywhere incl. canonical, hreflang, og, JSON-LD, sitemap, robots |
 | `https://cal.eu/kaisarahu/kristiine-pt` | Cal.com Kristiine event (TODO #8) |
 | `https://cal.eu/kaisarahu/rocca-pt` | Cal.com Rocca al Mare event (TODO #8) |
+| `https://cal.eu/kaisarahu/jarve-pt` | Cal.com Järve event (TODO #8) |
 
 ## Temporary build-only photos
 `/assets/img/temp-kaisa-hero.jpg` (hero, cropped 4:5 from `hero_photo.png`) and `temp-kaisa-about.jpg` (About, the gym leg-raise photo credited to a photographer) come from Kaisa's Instagram, via saved pages `assets/img/Instagram*.html` / `hero_photo.html`. `temp-kaisa-myfitness.jpg` (MyFitness profile photo) is no longer used. All of these are **git-ignored, rights not cleared, local build only**, and the photos show the MyFitness logo. **Before any deploy:** replace them with photos Kaisa has rights to (TODO #6), as webp with width/height, and delete the saved Instagram pages.
 
 ## Open items (handover §4)
-1 Bio/approach · 2 Qualifications (make **no** claims; don't claim the nutrition cert) · 3 Brand/logo (text logo for now) · ~~4 Email~~ · ~~5 Phone~~ (done) · 6 Own photos with rights (never MyFitness photos) · 7 Session length + windows per gym · 8 Cal.com username + slugs · 9 Gym entry wording for non-members · 10 Cancellation rule · 11 Domain + hosting · 12 Verify gym addresses (Endla 45; Paldiski mnt 102) · H1 variant (using location-led one for now).
+1 Bio/approach · 2 Qualifications (make **no** claims; don't claim the nutrition cert) · 3 Brand/logo (text logo for now) · ~~4 Email~~ · ~~5 Phone~~ (done) · 6 Own photos with rights (never MyFitness photos) · 7 Session length + windows per gym · 8 Cal.com username + slugs · 9 Gym entry wording for non-members · 10 Cancellation rule · 11 Domain + hosting · 12 Verify all three gym addresses (Endla 45; Paldiski mnt 102; Pärnu mnt 238) · H1 variant (using location-led one for now).
 
 ## Cal.com setup (done by Kaisa in Cal.com, reference only)
 | Setting | Value |
 |---|---|
 | Calendar | Kaisa's **personal** Outlook: conflict check + destination calendar |
-| Event types | Must: `kristiine-pt`, `rocca-pt`, gym address as in-person location. Could: friend/small group (seats, max 4) |
-| Availability | One schedule per gym, only that gym's windows |
+| Event types | Must: `kristiine-pt`, `rocca-pt`, `jarve-pt`, gym address as in-person location. Could: friend/small group (seats, max 4) |
+| Availability | One schedule per gym (3), only that gym's windows |
 | Buffers | 0 min within an event type |
-| Travel | ≥45 min gap between Kristiine and Rocca windows, built into the schedules |
+| Travel | ≥45 min gap between windows at ANY two different gyms (Kristiine, Rocca al Mare, Järve), built into the schedules |
 | Min notice / window | 12–24 h / 4 weeks |
 | Questions | Name, email, phone (optional), "Training goal". **No health/pregnancy/injury questions** (GDPR special category) |
 | Reminders | Email 24 h before |

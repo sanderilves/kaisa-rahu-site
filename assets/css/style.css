@@ -226,7 +226,7 @@ ul, ol { margin: 0; padding: 0; }
 .newtab-hint { font-size: .875rem; color: var(--muted); text-align: center; margin: 0; }
 .note { margin-top: 24px; padding: 16px 20px; border-radius: var(--radius-sm); background: var(--surface); border-left: 4px solid var(--violet); color: var(--muted); }
 .note p:last-child { margin: 0; }
-@media (min-width: 800px) { .gyms { grid-template-columns: repeat(2, 1fr); gap: 24px; } .gym { padding: 32px; } }
+@media (min-width: 1000px) { .gyms { grid-template-columns: repeat(3, 1fr); gap: 24px; } .gym { padding: 28px; } }
 
 /* ---------- Steps ---------- */
 .steps { list-style: none; counter-reset: step; display: grid; gap: 16px; }
