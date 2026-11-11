@@ -23,7 +23,7 @@ Two jobs: introduce Kaisa, and send visitors to **Cal.com** (`cal.eu`) to book a
 - Gyms: MyFitness Kristiine, MyFitness Rocca al Mare (Tallinn)
 - Languages: Estonian, English (*to confirm*)
 - Instagram: https://www.instagram.com/kaisarahu
-- Email: kaisa.rahu@myfitness.ee (confirmed, used on all pages incl. privacy) · Phone: [phone removed] (`tel:[phone removed]`, confirmed for publishing)
+- Email: kaisa.rahu@myfitness.ee (confirmed, used on all pages incl. privacy) · Phone: **not shown** on the site (removed at the owner's request; keep it off pages and JSON-LD)
 - Specialties: Jõutreening / Strength training · Lapseootel ja sünnitusjärgne treening / Prenatal and postnatal training · Personaaltreening noortele / Personal training for young people · Rühi ja liikuvuse parandamine / Posture and mobility · Treeningud alustajale / Training for beginners
 
 ## Files
