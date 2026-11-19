@@ -67,12 +67,12 @@ Global find-and-replace placeholders (values not confirmed yet):
 `/assets/img/kaisa-hero.webp` (hero, Ironman Kona medal photo, cropped 4:5 from git-ignored `hero.jpeg`; event photo with sponsor logos) and `kaisa-about.webp` (About, gym leg raise, credited to a photographer) were supplied by the site owner / Kaisa's Instagram and are committed and live on GitHub Pages at the site owner's request. Rights are not formally cleared and the gym photo shows the MyFitness logo: **replace them with rights-cleared photos before launch (TODO #6).** The source files (`hero.jpeg`, `temp-*.jpg`, saved `Instagram*.html` / `hero_photo*`) stay git-ignored; `temp-kaisa-myfitness.jpg` (MyFitness profile photo) is unused and must not be published.
 
 ## Open items (handover §4)
-1 Bio adapted from Kaisa's text – awaiting approval · 2 Qualifications: supplied – confirm exact NASM certificate name (still never claim a nutrition cert) · 3 Brand/logo (text logo for now) · ~~4 Email~~ · ~~5 Phone~~ (done) · 6 Own photos with rights (never MyFitness photos) · 7 Session length + windows per gym · ~~8 Cal.com username + slugs~~ (done: username `kaisarahu`; https://cal.com/kaisarahu/kristiine-pt, https://cal.com/kaisarahu/rocca-pt, https://cal.com/kaisarahu/jarve-pt) · ~~9 Gym entry~~ (done: "Saali sisenemiseks on vaja liikmesust või ühekordset külastuspiletit." / "You'll need a membership or a single-visit ticket to enter the gym.") · ~~10 Cancellation rule~~ (done: 24 h) · 11 Domain + hosting · ~~12 Gym addresses~~ (done; source: myfitness.ee club pages, no shopping-centre names: MyFitness Kristiine – Endla 45, 10615 Tallinn; MyFitness Rocca al Mare – Haabersti 5, 13516 Tallinn; MyFitness Järve – Pärnu mnt 186, 11314 Tallinn) · H1 variant (using location-led one for now).
+1 Bio adapted from Kaisa's text – awaiting approval · 2 Qualifications: supplied – confirm exact NASM certificate name (still never claim a nutrition cert) · 3 Brand/logo (text logo for now) · ~~4 Email~~ · ~~5 Phone~~ (done) · 6 Own photos with rights (never MyFitness photos) · 7 Session length + windows per gym · ~~8 Cal.com username + slugs~~ (done: username `kaisarahu`; https://cal.com/kaisarahu/kristiine-pt, https://cal.com/kaisarahu/rocca-pt, https://cal.com/kaisarahu/jarve-pt) · ~~9 Gym entry~~ (done: "Saali sisenemiseks on vaja liikmesust või ühekordset külastuspiletit." / "You'll need a membership or a single-visit ticket to enter the gym.") · ~~10 Cancellation rule~~ (done: 24 h) · 11 Domain + hosting · ~~Retention period~~ (done: 12 months after last session) · ~~12 Gym addresses~~ (done; source: myfitness.ee club pages, no shopping-centre names: MyFitness Kristiine – Endla 45, 10615 Tallinn; MyFitness Rocca al Mare – Haabersti 5, 13516 Tallinn; MyFitness Järve – Pärnu mnt 186, 11314 Tallinn) · H1 variant (using location-led one for now).
 
 ## Cal.com setup (done by Kaisa in Cal.com, reference only)
 | Setting | Value |
 |---|---|
-| Calendar | Kaisa's **personal** Outlook: conflict check + destination calendar |
+| Calendar | Kaisa's iCloud **Work** calendar: conflict check + destination calendar |
 | Event types | Must: `kristiine-pt`, `rocca-pt`, `jarve-pt`, gym address as in-person location. Could: friend/small group (seats, max 4) |
 | Availability | One schedule per gym (3), only that gym's windows |
 | Buffers | 0 min within an event type |
@@ -81,8 +81,9 @@ Global find-and-replace placeholders (values not confirmed yet):
 | Questions | Name, email, phone (optional), "Training goal". **No health/pregnancy/injury questions** (GDPR special category) |
 | Reminders | Email 24 h before |
 | Cancellation | Cancellation/reschedule cut-off: 24 h (must match the FAQ). |
+| Retention routine | Once a year Kaisa deletes bookings/attendee data older than 12 months in Cal.com and the matching events in her iCloud Work calendar. |
 | Event descriptions | Each event description must state the session length and the gym entry rule (MyFitness membership or single-visit ticket). |
-| Busy | Only Outlook events marked Busy block slots. Share MyFitness work calendar free/busy into personal Outlook if separate |
+| Busy | Only iCloud events marked Busy block slots. Share MyFitness work calendar free/busy into the iCloud Work calendar if separate |
 | Language | Check if booking page shows Estonian. If Cal.com doesn't show Estonian, consider adding a FAQ line. |
 
 ## Before every commit
