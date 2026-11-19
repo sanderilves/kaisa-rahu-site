@@ -16,7 +16,7 @@ Two jobs: introduce Kaisa, and send visitors to **Cal.com** (`cal.com`, username
 | Cookies / analytics / 3rd-party scripts | **None**. No cookie banner |
 | Stack | Plain HTML + CSS + tiny vanilla JS. No frameworks, npm or build step |
 | Fonts | Self-hosted woff2 in `/assets/fonts/` (Bricolage Grotesque headings, Manrope body, OFL). **Never Google Fonts** |
-| Colours | One accent only. Tokens in `:root`: `--bg` #FFF8F3 (cream), `--bg-alt` #F6F3FF (`.section-alt`), `--surface` #FFF, `--ink`/`--plum` #2A1F3D, `--muted` #5E5470, `--line` #EEE2D8, `--violet` #5B3DF5 (buttons, icons, links, eyebrows, markers), `--violet-hover` #4A2FD9, `--violet-tint` #EEEAFF (icon circles, pills), `--plum-dark` #1C1429 (footer), `--plum-soft` #4B3B78 (photo placeholder gradient only), `--focus` #2A1F3D (3px outline + offset; must differ from the button colour). **White text on violet.** No orange/coral, no extra tints. `.ph` yellow is a dev marker, not palette |
+| Colours | One accent family (light blue). Tokens in `:root`: `--bg` #FFF8F3 (cream), `--surface` #FFF, `--line` #EEE2D8, `--ink` #0F2A3D (deep navy: text, headings), `--muted` #4A5D6B, `--accent` #6EC1F2 (light blue: button backgrounds, step numbers), `--accent-hover` #4FB0EA, `--accent-ink` #0B6FB0 (blue for text on light backgrounds: links, eyebrows, experience years, FAQ "+", list markers, icon strokes), `--accent-tint` #DCEFFC (icon circles, pills), `--alt-bg` #EEF7FD (`.section-alt`), `--dark` #0F2A3D (contact section), `--dark-2` #0A1D2B (footer), `--focus` #0F2A3D (3px outline + offset; must differ from the button colour). Photo placeholder gradient `--dark` → #1F5F8B. theme-color stays cream. **Light blue buttons always use navy text (`--ink`), never white; blue text uses `--accent-ink`.** No violet/plum, no orange/coral, no extra tints. `.ph` yellow is a dev marker, not palette |
 
 ## Coach facts (only these; don't invent others)
 - Name: Kaisa Rahu – personaaltreener / personal trainer
@@ -24,6 +24,7 @@ Two jobs: introduce Kaisa, and send visitors to **Cal.com** (`cal.com`, username
 - Languages: Estonian, English (*to confirm*)
 - Instagram: https://www.instagram.com/kaisarahu
 - Email: kaisa.rahu@myfitness.ee (confirmed, used on all pages incl. privacy) · Phone: **not shown** on the site (removed at the owner's request; keep it off pages and JSON-LD)
+- Experience (shown in About): 2025–present triathlon coach, UP43 · 2024–present personal trainer, MyFitness Estonia (focus: improving athletic performance) · 2022–2024 altitude training coach (hypoxic chamber), TCR Sport Lab · 2022–2024 strength and conditioning coach, Rise Athlete · 2020–2022 personal trainer, MyFitness Estonia · 2019–2020 personal trainer, Balance Gym · 2019–2020 group trainer, F45 Training U Street
 - Specialties: Jõutreening / Strength training · Lapseootel ja sünnitusjärgne treening / Prenatal and postnatal training · Personaaltreening noortele / Personal training for young people · Rühi ja liikuvuse parandamine / Posture and mobility · Treeningud alustajale / Training for beginners · Jooksukavad / Running plans · Triatlonikavad / Triathlon plans (remote plans, ordered by email, priced in `#hinnakiri` / `#prices`)
 
 ## Files
