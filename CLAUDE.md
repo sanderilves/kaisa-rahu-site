@@ -4,12 +4,12 @@ Separate project. **Nothing to do with Ilves Coaching (ilvescoaching.ee)**: don'
 
 ## What this is
 One-page bilingual site (ET primary, EN full copy) for **Kaisa Rahu**, personal trainer in Tallinn.
-Two jobs: introduce Kaisa, and send visitors to **Cal.com** (`cal.eu`) to book a personal training slot at one of three gyms.
+Two jobs: introduce Kaisa, and send visitors to **Cal.com** (`cal.com`, username `kaisarahu`) to book a personal training slot at one of three gyms.
 
 ## Decisions (fixed)
 | Topic | Decision |
 |---|---|
-| Booking | Cal.com EU (`https://cal.eu/<username>/<slug>`), one event per gym. Opens in a **new tab**, never embedded |
+| Booking | Cal.com (`https://cal.com/kaisarahu/<slug>`), one event per gym: Kristiine `https://cal.com/kaisarahu/kristiine-pt`, Rocca al Mare `https://cal.com/kaisarahu/rocca-pt`, Järve `https://cal.com/kaisarahu/jarve-pt`. Opens in a **new tab**, never embedded |
 | Languages | ET (`/`) + EN (`/en/`), plain-link ET/EN switch |
 | Contact | Booking + `mailto:` + Instagram. **No contact form** |
 | Prices | Shown (B2C), no payments on the site. MyFitness prices are final, incl. VAT (24%). Plans: running 75 €, triathlon 100 € – final price (Kaisa not VAT-registered; confirm). If she becomes VAT-registered, show VAT-inclusive prices. Gym-entry rule shown under the price list and in the FAQ. Plans are ordered via the contact email. Not in JSON-LD yet |
@@ -61,15 +61,12 @@ Global find-and-replace placeholders (values not confirmed yet):
 | Placeholder | Meaning |
 |---|---|
 | `https://kaisarahu.ee` | Site domain (TODO #11). Replace everywhere incl. canonical, hreflang, og, JSON-LD, sitemap, robots |
-| `https://cal.eu/kaisarahu/kristiine-pt` | Cal.com Kristiine event (TODO #8) |
-| `https://cal.eu/kaisarahu/rocca-pt` | Cal.com Rocca al Mare event (TODO #8) |
-| `https://cal.eu/kaisarahu/jarve-pt` | Cal.com Järve event (TODO #8) |
 
 ## Temporary photos (published on the test site)
 `/assets/img/kaisa-hero.webp` (hero, Ironman Kona medal photo, cropped 4:5 from git-ignored `hero.jpeg`; event photo with sponsor logos) and `kaisa-about.webp` (About, gym leg raise, credited to a photographer) were supplied by the site owner / Kaisa's Instagram and are committed and live on GitHub Pages at the site owner's request. Rights are not formally cleared and the gym photo shows the MyFitness logo: **replace them with rights-cleared photos before launch (TODO #6).** The source files (`hero.jpeg`, `temp-*.jpg`, saved `Instagram*.html` / `hero_photo*`) stay git-ignored; `temp-kaisa-myfitness.jpg` (MyFitness profile photo) is unused and must not be published.
 
 ## Open items (handover §4)
-1 Bio adapted from Kaisa's text – awaiting approval · 2 Qualifications: supplied – confirm exact NASM certificate name (still never claim a nutrition cert) · 3 Brand/logo (text logo for now) · ~~4 Email~~ · ~~5 Phone~~ (done) · 6 Own photos with rights (never MyFitness photos) · 7 Session length + windows per gym · 8 Cal.com username + slugs · ~~9 Gym entry~~ (done: "Saali sisenemiseks on vaja liikmesust või ühekordset külastuspiletit." / "You'll need a membership or a single-visit ticket to enter the gym.") · ~~10 Cancellation rule~~ (done: 24 h) · 11 Domain + hosting · ~~12 Gym addresses~~ (done; source: myfitness.ee club pages, no shopping-centre names: MyFitness Kristiine – Endla 45, 10615 Tallinn; MyFitness Rocca al Mare – Haabersti 5, 13516 Tallinn; MyFitness Järve – Pärnu mnt 186, 11314 Tallinn) · H1 variant (using location-led one for now).
+1 Bio adapted from Kaisa's text – awaiting approval · 2 Qualifications: supplied – confirm exact NASM certificate name (still never claim a nutrition cert) · 3 Brand/logo (text logo for now) · ~~4 Email~~ · ~~5 Phone~~ (done) · 6 Own photos with rights (never MyFitness photos) · 7 Session length + windows per gym · ~~8 Cal.com username + slugs~~ (done: username `kaisarahu`; https://cal.com/kaisarahu/kristiine-pt, https://cal.com/kaisarahu/rocca-pt, https://cal.com/kaisarahu/jarve-pt) · ~~9 Gym entry~~ (done: "Saali sisenemiseks on vaja liikmesust või ühekordset külastuspiletit." / "You'll need a membership or a single-visit ticket to enter the gym.") · ~~10 Cancellation rule~~ (done: 24 h) · 11 Domain + hosting · ~~12 Gym addresses~~ (done; source: myfitness.ee club pages, no shopping-centre names: MyFitness Kristiine – Endla 45, 10615 Tallinn; MyFitness Rocca al Mare – Haabersti 5, 13516 Tallinn; MyFitness Järve – Pärnu mnt 186, 11314 Tallinn) · H1 variant (using location-led one for now).
 
 ## Cal.com setup (done by Kaisa in Cal.com, reference only)
 | Setting | Value |
