@@ -1,3 +1,13 @@
 .DS_Store
 *.log
 /node_modules/
+
+# TEMP photos for the local build only (MyFitness profile photo, Instagram photos). Never commit or deploy (no usage rights).
+/assets/img/temp-*.jpg
+# Saved Instagram pages (source of the temp photos; contain logged-in page data)
+/assets/img/Instagram*.html
+/assets/img/Instagram*_files/
+/assets/img/hero_photo.html
+/assets/img/hero_photo_files/
+/assets/img/hero_photo.png
+/assets/img/hero.jpeg
